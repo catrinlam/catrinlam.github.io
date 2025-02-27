@@ -1,0 +1,28 @@
+{
+  "name": "catrinlam.github.io",
+  "version": "1.0.0",
+  "description": "[colour theme](https://coolors.co/96bbbb-618985-112a46-f2e3bc-c19875)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/output.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catrinlam/catrinlam.github.io.git"
+  },
+  "author": "Catrin Lam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/catrinlam/catrinlam.github.io/issues"
+  },
+  "homepage": "https://github.com/catrinlam/catrinlam.github.io#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.9",
+    "tailwindcss": "^4.0.9"
+  }
+}
