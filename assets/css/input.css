@@ -1,8 +1,9 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @theme {
     --color-blue-light: #96BBBB;
-    --color-grey-green: #618985;
+    --color-green-ash: #618985;
     --color-navy: #112A46;
     --color-beige: #F2E3BC;
     --color-brown: #C19875;
