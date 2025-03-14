@@ -3,148 +3,217 @@
 <head>
     <title>Cheuk Yu Lam</title>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <meta name="description" content="Personal Portfolio"/>
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
     <meta author="Catrin Lam"/>
-    <link href="assets/css/style.css" rel="stylesheet"/>
-    <script src="https://kit.fontawesome.com/d7e50421d0.js" crossorigin="anonymous"></script>
+    <link href="assets/css/main.css" rel="stylesheet"/>
+    <noscript>
+        <link href="assets/css/noscript.css" rel="stylesheet"/>
+    </noscript>
 </head>
-<body>
+<body class="is-preload">
 
-<nav class="fixed top-0 left-0 w-full z-50 bg-beige dark:bg-navy">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Catrin Lam</span>
-    </a>
-    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
-    </button>
-    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-amber-200 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:border-gray-700">
-        <li>
-          <a href="" class="block py-2 px-3 rounded-sm text-navy dark:text-white hover:text-green-ash dark:hover:text-green-ash hover:bg-gray-100 md:p-0 dark:hover:bg-blue-light md:dark:hover:bg-transparent">About</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 rounded-sm text-navy dark:text-white hover:text-green-ash dark:hover:text-green-ash hover:bg-gray-100 md:p-0 dark:hover:bg-blue-light md:dark:hover:bg-transparent">Education</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 rounded-sm text-navy dark:text-white hover:text-green-ash dark:hover:text-green-ash hover:bg-gray-100 md:p-0 dark:hover:bg-blue-light md:dark:hover:bg-transparent">Projects</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 rounded-sm text-navy dark:text-white hover:text-green-ash dark:hover:text-green-ash hover:bg-gray-100 md:p-0 dark:hover:bg-blue-light md:dark:hover:bg-transparent">Contact</a>
-        </li>
-      </ul>
-    </div>
-    <div class="flex space-x-4">
-        <a href="https://www.linkedin.com/in/cheuk-yu-lam/" class="text-2xl text-navy dark:text-white hover:text-green-ash dark:hover:text-green-ash">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/catrinlam" class="text-2xl text-navy dark:text-white hover:text-green-ash dark:hover:text-green-ash">
-            <i class="fa-brands fa-github"></i>
-        </a>
-    </div>
-  </div>
-</nav>
+<!-- Wrapper -->
+<div id="wrapper">
 
-<div class="min-h-screen flex flex-col justify-center items-center">
-    
+    <!-- Header -->
+    <header class="alt" id="header">
+        <div class="logo"><strong>Personal Portfolio</strong><span>by Cheuk Yu Lam</span></div>
+        <!-- <a class="logo" href="index.html"><strong>Personal Portfolio</strong>
+            <span>by Cheuk Yu Lam</span>
+            </a> -->
+        <nav>
+            <a href="index.html">Home</a>
+            <!-- <a href="profile.html">Profile</a> -->
+            <a href="#two">Education</a>
+            <a href="#one">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="#menu"></a>
+        </nav>
+        <!-- <nav><a href="#menu">Menu</a></nav> -->
+    </header>
+
+    <!-- Menu -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <!-- <li><a href="profile.html">Profile</a></li> -->
+            <li><a href="#two">Education</a></li>
+            <li><a href="#one">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+<!--        <ul class="actions stacked">-->
+<!--            <li><a class="button primary fit" href="#">Get Started</a></li>-->
+<!--            <li><a class="button fit" href="#">Log In</a></li>-->
+<!--        </ul>-->
+    </nav>
+
     <!-- Banner -->
-    <section id="banner" class="mt-20">
-        <div class="container mx-auto text-center">
-            <header class="mb-4">
-                <h1 class="text-4xl font-bold">Hi, I'm Catrin</h1>
+    <section class="major" id="banner">
+        <div class="inner">
+            <header class="major">
+                <h1>Hi, I'm Catrin</h1>
             </header>
             <div class="content">
-                <p class="text-xl">Computer Science Student @ University of Birmingham</p>
-                <p class="mt-2">A computer science undergraduate who is interested in software engineering, game development, and web development.<br/>
+                <p>Computer Science Student @ University of Birmingham</p>
+                <p>A computer science graduate who is interested in software engineering, game
+                    development, and web development.<br/>
                     Skilled in Java | Python | HTML | CSS | Linux</p>
+                <!-- <ul class="actions">
+                    <li><a class="button next scrolly" href="profile.html">Get To Know Me More</a></li>
+                </ul> -->
             </div>
         </div>
     </section>
 
     <!-- Main -->
-    <div id="main" class="flex-grow">
+    <div id="main">
 
-        <!-- Education Section -->
-        <section id="two" class="py-12">
-            <div class="container mx-auto px-4">
-                <header class="mb-4">
-                    <h2 class="text-3xl font-bold">University of Birmingham</h2>
+        <!-- Two -->
+        <section id="two">
+            <div class="inner">
+                <header class="major">
+                    <h2>University of Birmingham</h2>
                 </header>
                 <p>Bachelor of Computer Science - BSc<br>
+
                     Dates attended or expected graduation 2020 – 2024<br>
-                    Activities and Societies: Jiu-jitsu 2020 - 2021, Tea Society 2021-2023</p>
+
+                    Activities and Societies: Jiu-jitsu 2020 - 2021, Tea Soociety 2021-2023 </p>
+                <!-- <ul class="actions">
+                    <li><a class="button next" href="education.html">My Education</a></li>
+                </ul> -->
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="one" class="py-12 bg-gray-50">
-            <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <article class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <span class="image block">
-                        <img alt="Background image of project" src="images/pic01.jpg" class="w-full h-48 object-cover"/>
-                    </span>
-                    <header class="p-4">
-                        <h3 class="text-xl font-bold"><a class="link text-blue-500 hover:underline" href="https://github.com/winter7eaf/Maps">Maps</a></h3>
-                        <p>Java (IntelliJ IDEA)</p>
-                        <p>Dec 2021</p>
-                    </header>
-                </article>
-                <article class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <span class="image block">
-                        <img alt="Background image of project" src="images/pic02.jpg" class="w-full h-48 object-cover"/>
-                    </span>
-                    <header class="p-4">
-                        <h3 class="text-xl font-bold"><a class="link text-blue-500 hover:underline" href="https://github.com/winter7eaf/Bingo">Bingo</a></h3>
-                        <p>Java (IntelliJ IDEA)</p>
-                        <p>Nov 2021</p>
-                    </header>
-                </article>
-                <article class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <span class="image block">
-                        <img alt="Background image of project" src="images/pic03.jpg" class="w-full h-48 object-cover"/>
-                    </span>
-                    <header class="p-4">
-                        <h3 class="text-xl font-bold"><a class="link text-blue-500 hover:underline" href="https://github.com/winter7eaf/Student-Marks-Capture-System">Student Marks Capture System</a></h3>
-                        <p>Java (IntelliJ IDEA)</p>
-                        <p>Oct 2021</p>
-                    </header>
-                </article>
-            </div>
+        <!-- One -->
+        <section class="tiles" id="one">
+            <article>
+                <span class="image">
+                    <img alt="Background image of project" src="images/pic01.jpg"/>
+                </span>
+                <header class="major">
+                    <h3><a class="link" href="https://github.com/winter7eaf/Maps">Maps</a></h3>
+                    <p> Java (IntelliJ IDEA)</p>
+                    <p>Dec 2021 </p></header>
+            </article>
+            <article>
+                <span class="image">
+                    <img alt="Background image of project" src="images/pic02.jpg"/>
+                </span>
+                <header class="major">
+                    <h3><a class="link" href="https://github.com/winter7eaf/Bingo">Bingo</a></h3>
+                    <p> Java (IntelliJ IDEA) </p>
+                    <p> Nov 2021 </p>
+                </header>
+            </article>
+            <article>
+                <span class="image">
+                    <img alt="Background image of project" src="images/pic03.jpg"/>
+                </span>
+                <header class="major">
+                    <h3><a class="link" href="https://github.com/winter7eaf/Student-Marks-Capture-System">Student Marks Capture System</a></h3>
+                    <p> Java (IntelliJ IDEA) </p>
+                    <p> Oct 2021 </p>
+                </header>
+            </article>
+            <!-- <article>
+                <span class="image">
+                    <img alt="Background image of project" src="images/pic04.jpg"/>
+                </span>
+                <header class="major">
+                    <h3><a class="link" href="projects.html">Flower attribute analysis</a></h3>
+                    <p> Python 3 (VS code) </p>
+                    <p> Apr 2021 - May 2021 </p>
+                </header>
+            </article> -->
+            <!-- <article>
+                <span class="image">
+                    <img src="images/pic05.jpg" alt="" />
+                </span>
+                <header class="major">
+                    <h3><a href="profile.html" class="link">Consequat</a></h3>
+                    <p>Ipsum dolor sit amet</p>
+                </header>
+            </article>
+            <article>
+                <span class="image">
+                    <img src="images/pic06.jpg" alt="" />
+                </span>
+                <header class="major">
+                    <h3><a href="profile.html" class="link">Etiam</a></h3>
+                    <p>Feugiat amet tempus</p> -->
+            <!-- </header>
+        </article> -->
         </section>
 
     </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-12 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="contact-method">
-                    <i class="fa-regular fa-envelope text-2xl text-blue-500"></i>
-                    <h3 class="text-xl font-bold mt-2">Email</h3>
-                    <a href="mailto:catrin.lam@outlook.com" class="text-blue-500 hover:underline">catrin.lam@outlook.com</a>
-                </div>
-            </div>
+    <!-- Contact -->
+    <section id="contact">
+        <div class="inner">
+            <!-- <section>
+                <form action="mailto:catrin.lam@outlook.com" method="post">
+                    <div class="fields">
+                        <div class="field half">
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text"/>
+                        </div>
+                        <div class="field half">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="text"/>
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6"></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input class="primary" type="submit" value="Send Message"/></li>
+                        <li><input type="reset" value="Clear"/></li>
+                    </ul>
+                </form>
+            </section> -->
+            <section class="split">
+                <section>
+                    <div class="contact-method">
+                        <span class="icon solid alt fa-envelope"></span>
+                        <h3>Email</h3>
+                        <a href="mailto:catrin.lam@outlook.com">catrin.lam@outlook.com</a>
+                    </div>
+                </section>
+            </section>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer id="footer" class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto text-center">
-            <ul class="flex justify-center space-x-4 mb-4">
-                <li><a href="https://github.com/W1nt3rl3af" class="text-white hover:text-blue-500"><i class="fa-brands fa-github"></i> GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/cheuk-yu-lam/" class="text-white hover:text-blue-500"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></li>
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                <!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
+                <li><a class="icon brands alt fa-github" href="https://github.com/W1nt3rl3af"><span
+                        class="label">GitHub</span></a></li>
+                <li><a class="icon brands alt fa-linkedin-in" href="https://www.linkedin.com/in/cheuk-yu-lam/"><span
+                        class="label">LinkedIn</span></a></li>
             </ul>
-            <ul class="text-sm">
+            <ul class="copyright">
                 <li>&copy; Catrin Lam</li>
+                <!-- <li>Design: <a href="https://html5up.net">HTML5 UP</a></li> -->
             </ul>
         </div>
     </footer>
 
 </div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>
